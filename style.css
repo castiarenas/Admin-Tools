@@ -1,0 +1,377 @@
+/* Tema Claro (por defecto) */
+body.light-mode {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+.light-mode .container {
+    background-color: #f5f5f5;
+}
+
+.light-mode header h1 {
+    color: #333333;
+}
+
+.light-mode header p {
+    color: #666666;
+}
+
+.light-mode #search-bar {
+    background-color: #ffffff;
+    color: #121212;
+    border: 1px solid #cccccc;
+}
+
+.light-mode a {
+    color: #007bff;
+}
+
+.light-mode a:hover {
+    color: #0056b3;
+}
+
+.light-mode .left-column,
+.light-mode .middle-column, 
+.light-mode .right-column {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .file-list-container a:hover,
+.light-mode .links-container a:hover {
+    color: #0056b3;
+}
+
+/* Tema Oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .container {
+    background-color: #1e1e1e;
+}
+
+.dark-mode header h1 {
+    color: #00bcd4;
+}
+
+.dark-mode header p {
+    color: #b0b0b0;
+}
+
+.dark-mode #search-bar {
+    background-color: #333333;
+    color: #e0e0e0;
+    border: 1px solid #444444;
+}
+
+.dark-mode a {
+    color: #00bcd4;
+}
+
+.dark-mode a:hover {
+    color: #ff4081;
+}
+
+.dark-mode .left-column, 
+.dark-mode .right-column {
+    background-color: #2b2b2b;
+    border: 1px solid #3a3a3a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .file-list-container a:hover,
+.dark-mode .links-container a:hover {
+    color: #ff4081;
+}
+
+/* General */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+#search-bar {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#search-bar::placeholder {
+    color: #b0b0b0;
+}
+
+/* Layout principal */
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+/* Columnas */
+.left-column, .right-column {
+    flex: 1;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Categorías y lista */
+.category-selector-container {
+    margin-bottom: 20px;
+}
+
+.category-selector-container label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#category-selector {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Lista de archivos */
+.file-list-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.file-list-container li {
+    margin-bottom: 10px;
+}
+
+.file-list-container a {
+    text-decoration: none;
+}
+
+.file-list-container a:hover {
+    text-decoration: underline;
+}
+
+/* Links y requerimientos técnicos */
+.links-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.links-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links-container li {
+    margin-bottom: 10px;
+}
+
+.links-container a {
+    text-decoration: none;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+body {
+    background-image: url('images/fondo4.jpg'); /* Cambia la ruta a la de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen en la pantalla */
+    background-attachment: fixed; /* Hace que la imagen no se mueva al hacer scroll */
+}
+.widget-container {
+    margin: 20px auto;
+    text-align: center;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparencia */
+}
+
+.widget-container iframe {
+    border: none;
+    width: 100%; /* Asegura que el iframe se ajuste al contenedor */
+    max-width: 800px;
+    height: 600px;
+}
+.light-mode .widget-container {
+    background-color: #ffffff;
+}
+
+.dark-mode .widget-container {
+    background-color: #1e1e1e;
+}
+/* Ajuste de las columnas para tres divisiones */
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.left-column, .middle-column, .right-column {
+    flex: 1; /* Cada columna ocupará un tercio del espacio */
+    background-color: #2b2b2b;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.right-column h2 {
+    font-size: 1.5rem;
+    color: #00bcd4;
+    margin-bottom: 15px;
+}
+
+/* Responsivo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .left-column, .middle-column, .right-column {
+        flex: none; /* Cada columna ocupará el ancho completo en pantallas pequeñas */
+    }
+}
+/* Animación en botones */
+button, .file-list-container a {
+    transition: all 0.3s ease;
+}
+
+button:hover, .file-list-container a:hover {
+    transform: scale(1.1); /* Incrementa el tamaño ligeramente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra */
+    color: #ff4081; /* Cambia el color del texto */
+}
+/* Columnas con animación */
+.left-column, .middle-column, .right-column {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.6s ease forwards;
+}
+
+/* Keyframes para el efecto de deslizamiento */
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+    transition: background-color 0.5s ease;
+}
+iframe {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Keyframes para el efecto */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+#category-selector {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#category-selector:hover {
+    background-color: #ebebeb; /* Cambia ligeramente el fondo */
+    transform: translateY(-5px); /* Eleva el elemento */
+}
+/* Estilo del loader */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#loader::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 5px solid #00bcd4;
+    border-top: 5px solid #ff4081;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Animación del loader */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+button {
+    transition: transform 0.2s ease;
+}
+
+button:active {
+    transform: rotate(-10deg);
+}
+.left-column, .middle-column, .right-column {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: loadColumns 0.6s ease forwards;
+}
+
+.middle-column {
+    animation-delay: 0.2s;
+}
+
+.right-column {
+    animation-delay: 0.4s;
+}
+
+@keyframes loadColumns {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.icon {
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2); /* Incrementa ligeramente el tamaño */
+}

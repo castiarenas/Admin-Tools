@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Tools</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+  <!-- Botón para cambiar de tema -->
+  <button id="theme-toggle">Cambiar Tema</button> 
+  <div id="loader"></div>
+  <div class="container">
+   
+   <!-- Encabezado -->
+    <header>
+      <h1>Admin Tools</h1>
+      <p>Bienvenido a tu aplicación de soporte técnico.</p>
+      
+      <input type="text" id="search-bar" placeholder="Buscar archivos o programas..." />
+    </header>
+    <!-- Plantilla clientes -->
+    <a href="https://docs.google.com/spreadsheets/d/1B5A0qpeaqu9kMglm40oW4NSb57M2pJTPJCF7BnKlBtI/edit?usp=drive_link" target="_blank">Abrir Planilla de Clientes</a>
+
+    <!-- Contenedor Principal -->
+    <main>
+      <div class="row">
+        <!-- Columna izquierda: Categorías y contenido -->
+        <div class="left-column">
+          <div class="category-selector-container">
+            <label for="category-selector">Selecciona una categoría:</label>
+            <select id="category-selector">
+              <option value="all">Todas</option>
+              <option value="sql">SQL</option>
+              <option value="windows">Windows</option>
+              <option value="tango">Tango</option>
+              <option value="documentos">Documentos</option>
+              <option value="programas">Programas</option>
+            </select>
+          </div>
+
+          <div class="file-list-container">
+            <ul id="file-list">
+             <!-- Documentos -->
+          <li data-category="documentos"><a href="https://drive.google.com/file/d/1SlHzlZ7dzH190dJI1NuG-oC6rkzZAQ4P/view?usp=drive_link">Actualización de CRM Go</a></li>
+          <li data-category="documentos"><a href="https://docs.google.com/document/d/1_CtgbdF5CS3ztbTnFti_LBAFvXz0mT9K/edit?usp=drive_link&ouid=115188655863212811191&rtpof=true&sd=true">Cambio de nombre de maquina</a></li>
+          <li data-category="documentos"><a href="https://docs.google.com/document/d/1GiQToFsVBBK5nBBXM4W8r5nPWfo4Ftoj/edit?usp=drive_link&ouid=115188655863212811191&rtpof=true&sd=true">Desinstalación Manual del sistema</a></li>
+          <li data-category="documentos"><a href="https://drive.google.com/file/d/1z9zS-8VyPMgj1fBZ5cAHTxHMDm4ec_7C/view?usp=drive_link">Diferencias entre facturador PV - ERP - POS</a></li>
+          <li data-category="documentos"><a href="https://drive.google.com/file/d/1Ip0XTncxsggJICL_ky4bTg1Z9MDc3Ynt/view?usp=drive_link">Impresion_Captura-de-Puertos</a></li>
+          <li data-category="documentos"><a href="https://docs.google.com/document/d/1QcKsl5PSID7P8gurGZmatYrygGuu7dAq/edit?usp=drive_link&ouid=115188655863212811191&rtpof=true&sd=true">MSDTC en otro Equipo</a></li>
+          <li data-category="documentos"><a href="https://drive.google.com/file/d/15lHLWTGj6Arep7ZJbkm-f_Vo_uTQBFnb/view?usp=drive_link">Tesoreria_Circuito-de-Rechazo-de-Cheques-de-Terceros-Depositados</a></li>
+          <li data-category="documentos"><a href="https://drive.google.com/file/d/1WeudQmCHDtE5VpuF-L1m_Frr8GUgSvlV/view?usp=drive_link">Tesoreria_Circuito-de-Rechazo-de-Cheques-de-Terceros-Endosados</a></li>
+          <li data-category="documentos"><a href="https://drive.google.com/file/d/1gTV7a6IJ4EpUxIIrx_XLY3fF3EQ5AycF/view?usp=drive_link">Tesoreria_Circuito-de-Rechazo-de-Cheques-Propios</a></li>
+          <!-- Tango -->
+          <li data-category="tango"><a href="https://drive.google.com/file/d/14OEa40GiSVtHhDIBb_tOqPj6SkQ1kt8R/view?usp=drive_link">Articulos con caracteres raros</a></li>
+          <li data-category="tango"><a href="https://drive.google.com/file/d/1MaQnDuVgf1ijnqlVSqOXFuGTLWR9EmQO/view?usp=drive_link">Averiguar Tablas Comprobante</a></li>
+          <li data-category="tango"><a href="https://drive.google.com/file/d/1FqwJJaIzfilHtXosCHa3jOyDKemHqOtD/view?usp=drive_link">Blanqueador nulls Sta11</a></li>
+          <li data-category="tango"><a href="https://drive.google.com/file/d/1bMh9mbkM_kaArRSXb18RkGFhu7-m56tB/view?usp=drive_link">Buscador de Datos</a></li>
+          <li data-category="tango"><a href="https://drive.google.com/file/d/1S4kkBJ8qIEX_Gk-ElQOTLeoVztSPFTC1/view?usp=drive_link">Cupones,corregir digitos</a></li>
+          <li data-category="tango"><a href="https://drive.google.com/file/d/1yxyFUbOBLkFJ3TjaS287eCT-ruoxKZ-E/view?usp=drive_link">Eliminador de objetos capataz</a></li>
+          <li data-category="tango"><a href="https://drive.google.com/file/d/1SlHzlZ7dzH190dJI1NuG-oC6rkzZAQ4P/view?usp=drive_link">Actualización de CRM Go</a></li>
+          <li data-category="tango"><a href="https://drive.google.com/file/d/1UGfto9OQDmczW9rkkExTQUIsBcNNU9WT/view?usp=drive_link">Eliminar comprobantes</a></li>
+          <li data-category="tango"><a href="https://drive.google.com/file/d/1uWQjWPNlr7FYXBhiKEdYmf95B2pivxyR/view?usp=drive_link">INSERTADOR asiento_comprobante_cp</a></li>
+          <li data-category="tango"><a href="https://drive.google.com/file/d/1g1jj0d6FqAP26h3WnCjcPgAhERGe-2pY/view?usp=drive_link">INSERTADOR asiento_comprobante_gv</a></li>
+          <li data-category="tango"><a href="https://drive.google.com/file/d/1TMBxEWBwcRMJGcnFFG3k9y6m77S8tJBe/view?usp=drive_link">INSERTADOR asiento_comprobante_iv</a></li>
+          <li data-category="tango"><a href="https://drive.google.com/file/d/1NQQi-vmmjokEs5nsax5VTFqKUZQXSRYz/view?usp=drive_link">INSERTADOR asiento_comprobante_SB violento</a></li>
+          <li data-category="tango"><a href="https://drive.google.com/file/d/15FFuZNTv-BQ4ZmB1mpWjsb7x8E662Nr3/view?usp=drive_link">Script buscador de caracteres invalidos</a></li>
+          <li data-category="tango"><a href="https://drive.google.com/file/d/1Zx2UqbaJQkrY8MZemxq2LJj9aEa3kNqP/view?usp=drive_link">SECUENCE</a></li>
+          <li data-category="tango"><a href="https://drive.google.com/file/d/1u9m8l0LyAPdpEGV8I9odbuSjpQZZv_ma/view?usp=drive_link">TIPO_COMPROBANTE_AFIP</a></li>
+          <li data-category="tango"><a href="https://drive.google.com/file/d/1BXbq12KO6g4EynWLRoaBV1F3y92GEqgT/view?usp=drive_link">UNIDAD MEDIDA AFIP</a></li>
+          <!-- Sql -->
+          <li data-category="sql"><a href="https://drive.google.com/file/d/1uRvWkSsdIU__DD-70CVYjhsWH_N3Inmp/view?usp=drive_link">Backup masivo</a></li>
+          <li data-category="sql"><a href="https://drive.google.com/file/d/1t7hXdQDYYKn4Jq852H--NWsDFb7orxaE/view?usp=drive_link">defragmentacion</a></li>
+          <li data-category="sql"><a href="https://drive.google.com/file/d/1vLmy9imNDF3urcsaA9r3hfES3dmxPxhM/view?usp=drive_link">Kill process</a></li>
+          <li data-category="sql"><a href="https://drive.google.com/file/d/1Eb9gNPcIFSKUrGoNqaP1nHx2KOgwB-HX/view?usp=drive_link">Limitar Memoria</a></li>
+          <li data-category="sql"><a href="https://drive.google.com/file/d/1XaRrFrxuUS1G8OcyOJEL3KyCqbCDVx8q/view?usp=drive_link">Mover mdf y ldf a otro directorio</a></li>
+          <li data-category="sql"><a href="https://drive.google.com/file/d/1vmpky-ZXxvXzUlrSwHQJKfaqYVNcN32I/view?usp=drive_link">Restauracion masiva</a></li>
+          <li data-category="sql"><a href="https://drive.google.com/file/d/1Y5pXmMdJb6tKYHzPhRDX0fXslWPzKBVn/view?usp=drive_link">Suspect</a></li>
+          <li data-category="sql"><a href="https://drive.google.com/file/d/1Sdds71gwuULcXfKJ_aXJRv3a9E9cF4ys/view?usp=drive_link">Tamaño de las tablas</a></li>
+          <li data-category="sql"><a href="https://drive.google.com/file/d/1s4nkhrkjTeGrCz2wHqP6W-NibRny1uOw/view?usp=drive_link">Restaurar base</a></li>
+          <li data-category="sql"><a href="https://drive.google.com/file/d/1FqxxO8elLqPF6Cl6o6aGygHepMhMOEaH/view?usp=drive_link">Hacer backup</a></li>
+          <li data-category="windows"><a href="https://drive.google.com/file/d/1dR9llbemfGM_skDWYh9CYJmcZSuSt2jr/view?usp=drive_link">check_db_integrity</a></li>
+          <!-- Windows -->
+          <li data-category="windows"><a href="https://drive.google.com/file/d/1dR9llbemfGM_skDWYh9CYJmcZSuSt2jr/view?usp=drive_link">check_db_integrity</a></li>
+          <li data-category="windows"><a href="https://drive.google.com/file/d/1JM3RtICRV82qpJIso2LnrohZGk4phBG3/view?usp=drive_link">check_disk_space</a></li>
+          <li data-category="windows"><a href="https://drive.google.com/file/d/19UTfBA-NwrKE9KUPGRLsodNcMtswE13Y/view?usp=drive_link">check_network_status</a></li>
+          <li data-category="windows"><a href="https://drive.google.com/file/d/1l1QgXXyqyJGt0YyjRCt8LpxQCMBN5ge7/view?usp=drive_link">cleanup_temp</a></li>
+          <li data-category="windows"><a href="https://drive.google.com/file/d/1H1_ISNjNUjr5_8ksCxDSEY3vuTdYIB-s/view?usp=drive_link">clear_cache</a></li>
+          <li data-category="windows"><a href="https://drive.google.com/file/d/1UeMfRrgp0F-EUtvzfy7IYUwrch9gN8CP/view?usp=drive_link">create_user</a></li>
+          <li data-category="windows"><a href="https://drive.google.com/file/d/16r-RlCYP6x2osDqi-Dx2aTGoCtCHErOj/view?usp=drive_link">delete_user</a></li>
+          <li data-category="windows"><a href="https://drive.google.com/file/d/1R8DUYtatnESkm80G6b4rn1o4IH9hWUTQ/view?usp=drive_link">disk_check</a></li>
+          <li data-category="windows"><a href="https://drive.google.com/file/d/1zKunPNQxSx8E_jzZ_kSMu_kL36dKxfCd/view?usp=drive_link">flush_dns</a></li>
+          <li data-category="windows"><a href="https://drive.google.com/file/d/1lKdD0RqU0lK3zDWL9uJX2AdPPr1N4WOy/view?usp=drive_link">reboot_system</a></li>
+          <li data-category="windows"><a href="https://drive.google.com/file/d/1DRWR-TzZY5QBS6TCRwDgp6hVT-0ClaFU/view?usp=drive_link">Automatización de Tareas de Copia de Seguridad de SQL</a></li>
+          <li data-category="windows"><a href="https://drive.google.com/file/d/17_RNUgWYkaXLaNpvNPTSIfk40yKf14yr/view?usp=drive_link">Backup de Archivos Importantes</a></li>
+          <li data-category="windows"><a href="https://drive.google.com/file/d/15GFL2uWfBVrkByhJihMszVPoh8p9g65p/view?usp=drive_link">Desactivar Firewall</a></li>
+          <li data-category="windows"><a href="https://drive.google.com/file/d/1PJ6MFNFBfV_MpWUAFTJIKMwhPXvZ_yGk/view?usp=drive_link">Desfragmentar Discos</a></li>
+          <li data-category="windows"><a href="https://drive.google.com/file/d/1Z0CqC3kOMeogzifvRbfAKDuh1vBQnKqN/view?usp=drive_link">Reindexar Todas las Bases de Datos</a></li>
+          <li data-category="windows"><a href="https://drive.google.com/file/d/1-QZ_AEkatUBQNmXsje2hFiu_v0GxqGwQ/view?usp=drive_link">Verificación y Reparación de Archivos del Sistema</a></li>
+          <li data-category="windows"><a href="https://drive.google.com/file/d/1EpY0WcFfTEArhot4Oi3l-wRcz_UK_E_z/view?usp=drive_link">Crear tarea Windows</a></li>
+          <!-- Programas -->
+          <li data-category="programas"><a href="https://anydesk.com/es/downloads/windows" target="_blank">AnyDesk</a></li>
+          <li data-category="programas"><a href="https://learn.microsoft.com/es-es/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16" target="_blank">SQL Server Management Studio</a></li>
+          <li data-category="programas"><a href="https://drive.google.com/file/d/1X3xZ9SYF7GqABbR-lk3P5yHmY82ZT9b7/view?usp=drive_link" target="_blank">EpsonFPHostControlX(1.9.2)</a></li>
+          <li data-category="programas"><a href="https://drive.google.com/file/d/1KP5WLEO8gkwhIr-bCWyB2DoqcWt5KS9X/view?usp=drive_link" target="_blank">7zip</a></li>
+        </ul>
+
+          </div>
+        </div>
+
+        <!-- Columna central: Ayuda Tango y Links Útiles -->
+        <div class="middle-column">
+          <div class="links-container">
+            <h2>Ayuda Tango</h2>
+            <ul>
+              <li><a href="https://ayudas.axoft.com/24ar/instalacion/" target="_blank">Ayuda Tango</a></li>
+              <li><a href="https://descargas.axoft.com/ftp/iso/argentina/enteros/TangoDelta4-24.01.006-AR-RTM.iso" target="_blank">Delta 4</a></li>
+              <li><a href="https://descargas.axoft.com/ftp/iso/argentina/upgrade/T24/AxUpgrade.exe" target="_blank">Actualizador Delta 4</a></li>
+              <li><a href="https://descargasr.axoft.com/ftp/version_interna/HotfixPublicados/" target="_blank">Hotfixs Publicados</a></li>
+              <li><a href="https://ayudas.axoft.com/21ar/documentos/operacion/tablas_oper/" target="_blank">Tablas del Sistema</a></li>
+              <li><a href="https://ayudas.axoft.com/24ar/variables_archive/" target="_blank">Variables de Impresión</a></li>
+              <li><a href="https://ayudas.axoft.com/24ar/videos/" target="_blank">Videos de Tango</a></li>
+              <li><a href="https://ayudas.axoft.com/24ar/manuales_nexo/" target="_blank">Ayuda Nexo</a></li>
+            </ul>
+
+            <h2>Links Útiles</h2>
+            <ul>
+              <li><a href="https://learn.microsoft.com/es-es/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16" target="_blank">SQL Server Management Studio</a></li>
+              <li><a href="https://anydesk.com/es/downloads/windows" target="_blank">AnyDesk</a></li>
+            </ul>
+          </div>
+        </div>
+         <!-- Columna derecha: calendario de google -->
+        <div class="right-column">
+          <h2>Calendario</h2>
+          <div class="widget-container">
+              <iframe 
+                  src="https://calendar.google.com/calendar/embed?src=gabycasti822%40gmail.com&ctz=America%2FArgentina%2FBuenos_Aires" 
+                  style="border: 0" 
+                  width="100%" 
+                  height="600" 
+                  frameborder="0" 
+                  scrolling="no">
+              </iframe>
+          </div>
+      </div>
+  </div>
+      </div>
+    </main>
+  </div>
+</div>
+ 
+  <script src="script.js"></script>
+</body>
+<img src="icono.png" class="icon" alt="Icono">
+
+</html>
